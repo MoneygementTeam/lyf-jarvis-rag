@@ -1,0 +1,16 @@
+### 날씨 정보 저장
+POST http://localhost:8000/weather/
+Content-Type: application/json
+
+{
+  "temp": 31.5,
+  "feels_like": 35.2,
+  "weather": "Clouds",
+  "description": "few clouds",
+  "humidity": 68,
+  "wind_speed": 4.1,
+  "wind_deg": 90,
+  "city": "Lyf Funan Singapore",
+  "country": "SG"
+}
+
