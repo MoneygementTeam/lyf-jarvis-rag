@@ -50,7 +50,7 @@ def openai(command: Command):
     print(f"command ${command}!!!!!!")
 
     client = OpenAI(
-        api_key=os.getenv("api_key")
+        api_key=os.getenv("api_key"))
 
     completion = client.chat.completions.create(
         model='gpt-4o-2024-08-06',
