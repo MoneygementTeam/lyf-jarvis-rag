@@ -41,10 +41,10 @@
 <p style="text-align: center;">
    <img src="https://img.shields.io/badge/python-007396?style=for-the-badge&logo=python&logoColor=white" alt="Java"/>
    <img src="https://img.shields.io/badge/fastapi-6DB33F?style=for-the-badge&logo=fastapi&logoColor=white" alt="fastapi"/>
-   <img src="https://img.shields.io/badge/chat gpt-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="chat gpt"/>
-   <img src="https://img.shields.io/badge/mongodb-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="mongodb"/>
+   <img src="https://img.shields.io/badge/chatgpt-6DB33F?style=for-the-badge&logo=chatgpt&logoColor=white" alt="chat gpt"/>
+   <img src="https://img.shields.io/badge/mongodb-4479A1?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb"/>
    <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger"/>
-   <img src="https://img.shields.io/badge/Tomi-02303A?style=for-the-badge&logo=gradle&logoColor=white" alt="tomi"/>
+   <img src="https://img.shields.io/badge/Tomi-02303A?style=for-the-badge&logo=tomi&logoColor=white" alt="tomi"/>
 </p>
 
 <h3 style="text-align: center;">Infrastructure</h3>
