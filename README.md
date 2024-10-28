@@ -45,6 +45,7 @@
    <img src="https://img.shields.io/badge/mongodb-4479A1?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb"/>
    <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger"/>
    <img src="https://img.shields.io/badge/Tomi-02303A?style=for-the-badge&logo=tomi&logoColor=white" alt="tomi"/>
+   <img src="https://img.shields.io/badge/selenium-02303A?style=for-the-badge&logo=selenium&logoColor=white" alt="selenium"/>
 </p>
 
 <h3 style="text-align: center;">Infrastructure</h3>
