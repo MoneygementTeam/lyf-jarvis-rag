@@ -7,6 +7,8 @@ from pymongo import MongoClient
 from pydantic import BaseModel
 from pymongo.server_api import ServerApi
 
+from utils import call_openai
+
 
 MAPPING_EN2KO = {
     "hangover": "해장",
