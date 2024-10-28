@@ -46,6 +46,8 @@
    <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" alt="Swagger"/>
    <img src="https://img.shields.io/badge/Tomi-02303A?style=for-the-badge&logo=tomi&logoColor=white" alt="tomi"/>
    <img src="https://img.shields.io/badge/selenium-02303A?style=for-the-badge&logo=selenium&logoColor=white" alt="selenium"/>
+   <img src="https://img.shields.io/badge/Text Embedding 3 Medium (RAG)-FF5733?style=for-the-badge&logo=openai&logoColor=white" alt="Text Embedding 3 Medium (RAG)"/>
+
 </p>
 
 <h3 style="text-align: center;">Infrastructure</h3>
