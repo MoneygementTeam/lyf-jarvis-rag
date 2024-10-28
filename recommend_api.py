@@ -1,5 +1,10 @@
+import json
+import os
+import urllib
+
 import certifi
 from fastapi import FastAPI
+from openai import OpenAI
 from pydantic import BaseModel
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
@@ -43,5 +48,14 @@ class Command(BaseModel):
 @app.post("/openai")
 def openai(command: Command):
     print(f"command ${command}!!!!!!")
-    return call_openai(command)
+
+    client = OpenAI(
+        api_key=os.getenv("api_key")
+
+    completion = client.chat.completions.create(
+        model='gpt-4o-2024-08-06',
+        messages=[{'role': 'user', 'content': command.command}],
+        temperature=0.0
+    )
+    return completion.choices[0].message.content
 
