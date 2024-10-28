@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import certifi
 from fastapi import FastAPI
 from pymongo import MongoClient
+from pydantic import BaseModel
 from pymongo.server_api import ServerApi
 
 
