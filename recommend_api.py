@@ -1,14 +1,10 @@
-import os
-import urllib
-from dotenv import load_dotenv
 import certifi
 from fastapi import FastAPI
-from pymongo import MongoClient
 from pydantic import BaseModel
+from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 from utils import call_openai
-
 
 MAPPING_EN2KO = {
     "hangover": "해장",
@@ -18,10 +14,8 @@ MAPPING_KO2EN = {v: k for k, v in MAPPING_EN2KO.items()}
 
 app = FastAPI()
 
-load_dotenv()
-
-username = os.getenv("username")
-password = os.getenv("password")
+username = 'danal'
+password = 'ekskfakstp1!'
 uri = f"mongodb+srv://{username}:{password}@cluster0.adxu3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client = MongoClient(uri, server_api=ServerApi('1'), tlsCAFile=certifi.where())
 db = client.recommendations_db
@@ -41,7 +35,6 @@ def recommend(query_en: str = "hangover"):
 
 
 
-
 class Command(BaseModel):
     command: str
 
@@ -49,5 +42,6 @@ class Command(BaseModel):
 
 @app.post("/openai")
 def openai(command: Command):
+    print(f"command ${command}!!!!!!")
     return call_openai(command)
 
