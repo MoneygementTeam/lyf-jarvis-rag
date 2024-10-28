@@ -35,3 +35,16 @@ def recommend(query_en: str = "hangover"):
     query_ko = MAPPING_EN2KO[query_en]
     data = list(collection.find({"_id": query_ko}, {'_id': 0}))
     return data
+
+
+
+
+class Command(BaseModel):
+    command: str
+
+
+
+@app.post("/openai")
+def openai(command: Command):
+    return call_openai(command)
+
