@@ -1,3 +1,5 @@
+import os
+
 import certifi
 from fastapi import FastAPI
 from openai import OpenAI
