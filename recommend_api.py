@@ -1,7 +1,3 @@
-import json
-import os
-import urllib
-
 import certifi
 from fastapi import FastAPI
 from openai import OpenAI
@@ -9,7 +5,7 @@ from pydantic import BaseModel
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-from utils import call_openai
+from rag.service.ragService import ragService
 
 MAPPING_EN2KO = {
     "hangover": "해장",
@@ -59,3 +55,18 @@ def openai(command: Command):
     )
     return completion.choices[0].message.content
 
+
+
+class Recommend(BaseModel):
+    userId: str
+    command: str
+    latitude : float
+    longitude: float
+    weather: str
+
+
+
+@app.post("/recommend")
+def openaiFunction(request: Recommend):
+    result = ragService(request)
+    return result
