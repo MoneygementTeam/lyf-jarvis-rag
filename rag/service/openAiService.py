@@ -1,4 +1,5 @@
 import os
+import random
 
 from openai import OpenAI
 
@@ -19,6 +20,7 @@ MESSAGE = [
 ]
 
 def functionCallService(request, recommend: list):
+    recommend = random.shuffle(recommend)
     travel_plan = {
         "startPoint": {
             "name": "start point name",
